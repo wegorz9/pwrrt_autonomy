@@ -20,7 +20,7 @@ cmake --build build
 
 5. Run the program with
 ```bash
-./pwrrt_autonomy example_input.txt
+./build/pwrrt_autonomy example_input.txt
 ```
 ## On Windows
 [Cmake](https://cmake.org/download/) and [MinGW](https://www.mingw-w64.org/) are required.
@@ -90,7 +90,7 @@ To compile the program follow the steps outlined [here](#to-run-the-program-for-
 1. Navigate to `pwrrt_autonomy/build`
 2. Run the program with
 ```bash
-./position_interpolator sensor1.csv sensor2.csv
+./build/position_interpolator sensor1.csv sensor2.csv
 ```
 
 ## Task 2 solution description
