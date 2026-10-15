@@ -109,4 +109,4 @@ Matplotlib was initially used, but proved insufficient for the task at hand. The
 
 ### Problems and edgecases in task 2
 
- - In the description of task 2, it was not specified how we're supposed to estimate position. I've decided on linear interpolation between datapoints, and the nearest point before the first and last timestamp. I felt that extrapolation was not the right call, since the car either was stationary before the begining of the race, or it was going to be stationary at the end. Linear interpolation was used because its fast, easy to implement and for dense data quite accurate.
+ - In the description of task 2, it was not specified how we're supposed to estimate position. I've decided on linear interpolation between datapoints, and the nearest point before the first and last timestamp. I felt that extrapolation was not the right call, since the car either was stationary before the beginning of the race, or it was going to be stationary at the end. Linear interpolation was used because its fast, easy to implement and for dense data quite accurate.
