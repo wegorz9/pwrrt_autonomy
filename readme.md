@@ -25,7 +25,7 @@ cmake --build build
 ## On Windows
 [Cmake](https://cmake.org/download/) and [MinGW](https://www.mingw-w64.org/) are required.
 
-To clone the repo and compile the C++ code, run in your powershell:
+To clone the repo and compile the C++ code, run in your PowerShell:
 ```powershell
 git clone https://github.com/wegorz9/pwrrt_autonomy.git
 cd pwrrt_autonomy
