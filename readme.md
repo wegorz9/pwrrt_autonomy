@@ -53,7 +53,7 @@ the culling. Sometimes the inner loop would not run because of a misplaced IF st
 ### Solutions provided were checked manually using a graphing calculator
 The graph includes the points that were supposed to be deleted. That is why the polygon does not include them.
 
-<img src="images/hull" alt="hull plot visualization" width="600"/>
+<img src="images/hull.png" alt="hull plot visualization" width="600"/>
 
 # Task 2.1 and 2.2
 
