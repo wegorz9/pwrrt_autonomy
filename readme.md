@@ -1,15 +1,37 @@
-# To run the program for task 1.1 and 1.2
+# To run the program for task 1.1 and 1.2 (on Linux)
 1. Clone the repository
 2. Navigate to the directory <br>
-3. Compile the program with 
+3. To compile the program run
 ```bash
-make
+cmake -S . -B build -G "Unix Makefiles" &&
+cmake --build build
 ```
 `Warning! C++20 is required to compile these programs!`
-4. Run the program with
+4. Navigate to `build`
+
+Or oneline:
+```bash
+git clone https://github.com/wegorz9/pwrrt_autonomy.git &&
+cd pwrrt_autonomy &&
+cmake -S . -B build -G "Unix Makefiles" &&
+cmake --build build
+```
+
+5. Run the program with
 ```bash
 ./pwrrt_autonomy example_input.txt
 ```
+## On Windows
+[Cmake](https://cmake.org/download/) and [MinGW](https://www.mingw-w64.org/) are required.
+
+To clone the repo and compile the C++ code, run in your powershell:
+```powershell
+git clone https://github.com/wegorz9/pwrrt_autonomy.git
+cd pwrrt_autonomy
+cmake -S . -B build -G "MinGW Makefiles"
+cmake --build build
+```
+
 
 ## Solution description
 1. Read the file and convert everything from strings to proper values.
@@ -55,15 +77,9 @@ python main.py
 ```interpolation2.html``` visualises data from sensor 2 and showcases the interpolation algorithm for that dataset. Since sensor 2 data is much sparser, the interpolated points are easier to see,
 
 ## To run the program for task 2.2:
-<sub>`Compiling the program for task 1 also compiles this. Check if it is really necessary.`</sub>
-1. Clone the repository
-2. Navigate to the directory
-3. Compile the program with:
-```bash
-make
-```
-`C++20 is also reqired here`
-4. Run the program with
+To compile the program follow the steps outlined [here](#to-run-the-program-for-task-11-and-12-on-linux)
+1. Navigate to `pwrrt_autonomy/build`
+2. Run the program with
 ```bash
 ./position_interpolator sensor1.csv sensor2.csv
 ```
