@@ -62,7 +62,12 @@ In particular they disagree about which way is towards positive Y. Sensor 1 show
 
 Visualizations can be made by running:
 ```bash
-python main.py
+python3 main.py
+```
+It is recommended to create a virtual environment for python before running the script, with:
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
 ```
 `Warning! Packages plotly and matplotlib are required to run the python program. They can be installed with: "pip install plotly" and "pip install matplotlib"`<br>
 5 files will be created, sensor1.html, sensor2.html, interpolation1.html, interpolation2.html and posdelta.html. To open them a regular web browser may be used.
