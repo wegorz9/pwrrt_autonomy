@@ -7,9 +7,10 @@ cmake -S . -B build -G "Unix Makefiles" &&
 cmake --build build
 ```
 `Warning! C++20 is required to compile these programs!`
+
 4. Navigate to `build`
 
-Or oneline:
+Or one line:
 ```bash
 git clone https://github.com/wegorz9/pwrrt_autonomy.git &&
 cd pwrrt_autonomy &&
